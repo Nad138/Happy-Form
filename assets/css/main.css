@@ -1,0 +1,21 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+.izquierda, .derecha{
+  float: left;
+  width: 50%;
+}
+
+footer{
+  background-color: #3E3F40;
+  color: white;
+}
+.redes-sociales{
+  text-align: right;
+  margin-right: 10px;
+}
+img{
+  color: #b5b6b7;
+  height: 30px;
+
+}

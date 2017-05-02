@@ -3,8 +3,235 @@
   <head>
     <meta charset="utf-8">
     <title>Happy Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
+    <section class="formulario">
+      <span>Antes de iniciar la inscripción debes leer las <a href="#">bases del concurso</a></span><br>
+      <span><p><strong>Nota:</strong> Al finalizar el formulario encontrarás el ícono GUARDAR, el cual permitirá que puedas guardar la información ingresada si no culminaste el formulario, dándote la posibilidad de entrar cuando necesites concretar y/o editar antes de elegir el ícono ENVIAR</p></span>
+      <h1>Formulario del Registro</h1>
+      <section class="datos-representante">
+        <h2>Datos del representante de la entidad postulante</h2>
+        <div class="izquierda">
+          <label>Apellidos<br>
+           <input type="text" id="apellidos" name="apellidos" required=""value="">
+          </label><br>
+          <label>Fecha de Nacimiento (dd/mm/yyyy)<br>
+           <input type="text" id="nacimiento" name="nacimiento" required="" value="">
+          </label><br>
+          <label>Región de Nacimiento<br>
+            <select class="nacimiento" id="region-nac" required="" name="region-nac">
+              <option value="">Amazonas</option>
+              <option value="">Áncash</option>
+              <option value="">Apurímac</option>
+              <option value="">Arequipa</option>
+              <option value="">Ayacucho</option>
+              <option value="">Cajamarca</option>
+              <option value="">Callao</option>
+              <option value="">Cuzco</option>
+              <option value="">Huancavelica</option>
+              <option value="">Huánuco</option>
+              <option value="">Ica</option>
+              <option value="">Junín</option>
+              <option value="">La Libertad</option>
+              <option value="">Lambayeque</option>
+              <option value="">Lima</option>
+              <option value="">Loreto</option>
+              <option value="">Madre de Dios</option>
+              <option value="">Moquegua</option>
+              <option value="">Pasco</option>
+              <option value="">Piura</option>
+              <option value="">Puno</option>
+              <option value="">San Martin</option>
+              <option value="">Tacna</option>
+              <option value="">Tumbes</option>
+              <option value="">Ucayali</option>
+            </select>
+          </label><br>
+          <label>Sexo<br>
+           <input type="checkbox" id="masculino" name="" value=""> Masculino <br>
+           <input type="checkbox" id="femenino"name="" value=""> Femenino
+          </label><br>
+          <label>Profesión<br>
+           <input type="text" id="profesion" name="" required="" value="">
+          </label><br>
+          <label>Tiempo en dicho cargo en cantidad de meses <br>
+            <input type="text" id="tiempo-cargo" name="" required="" value="">
+          </label>
+        </div>
+        <div class="derecha">
+          <label>Nombres<br>
+           <input type="text" id="nombre" name="nombre" required="" value="">
+          </label><br>
+          <label>Edad<br>
+              <select class="edad" id="edad" required="" name="edad">
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+                <option value="">31</option>
+                <option value="">32</option>
+                <option value="">33</option>
+                <option value="">34</option>
+                <option value="">35</option>
+                <option value="">36</option>
+                <option value="">37</option>
+                <option value="">38</option>
+                <option value="">39</option>
+                <option value="">40</option>
+                <option value="">41</option>
+                <option value="">42</option>
+              </select>
+            </label><br>
+
+          <label>Región de residencia<br>
+            <select class="residencia" id="residencia" required="" name="residencia">
+              <option value="">Amazonas</option>
+              <option value="">Áncash</option>
+              <option value="">Apurímac</option>
+              <option value="">Arequipa</option>
+              <option value="">Ayacucho</option>
+              <option value="">Cajamarca</option>
+              <option value="">Callao</option>
+              <option value="">Cuzco</option>
+              <option value="">Huancavelica</option>
+              <option value="">Huánuco</option>
+              <option value="">Ica</option>
+              <option value="">Junín</option>
+              <option value="">La Libertad</option>
+              <option value="">Lambayeque</option>
+              <option value="">Lima</option>
+              <option value="">Loreto</option>
+              <option value="">Madre de Dios</option>
+              <option value="">Moquegua</option>
+              <option value="">Pasco</option>
+              <option value="">Piura</option>
+              <option value="">Puno</option>
+              <option value="">San Martin</option>
+              <option value="">Tacna</option>
+              <option value="">Tumbes</option>
+              <option value="">Ucayali</option>
+            </select>
+          </label><br>
+          <label>Cargo en la organización<br>
+           <input type="text" id="cargo" name="" required="" value="">
+          </label><br>
+          <label>Tiempo en la organización en cantidad de meses <br>
+            <input type="text" id="tiempo-cargo" name="" required="" value="">
+          </label>
+        </div>
+      </section>
+      <section class="datos-entidad">
+        <h2>Datos de la entidad postulante</h2>
+        <div class="izquierda">
+          <label>Nombre de la Entidad<br>
+           <input type="text" id="entidad" name="entidad" required=""value="">
+          </label><br>
+          <label>¿Cuándo comenzaron a operar? (dd/mm/yyyy)<br>
+           <input type="text" id="inicio-entidad" name="inicio-entidad" required="" value="">
+          </label><br>
+          <label>Tipo de organización<br>
+            <select class="tipo-entidad" id="tipo-entidad" required="" name="region-nac">
+              <option value="">ONG</option>
+              <option value="">Fundacioneso</option>
+              <option value="">Asociación Civil</option>
+              <option value="">Empresa</option>
+              <option value="">Persona Natural</option>
+              <option value="">Otros</option>
+            </select>
+          </label><br>
+          <label>Otros<br>
+           <input type="text" id="otros" name="" required="" value="">
+          </label><br>
+          <label>¿Está inscrita en Registros Públicos?<br>
+            <input type="checkbox" id="si" name="" value="">Si <br>
+            <input type="checkbox" id="no" name="" value="">No
+          </label>
+        </div>
+        <div class="derecha">
+          <label>Ámbito de intervención<br>
+            <p>¿Cuáles son las regiones, provincia y distritos donde se sitúan sus operaciones a lo largo de toda la cadena del negocio?</p>
+            <strong>Regiones</strong><br>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Amazonas</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Áncash</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Apurímac</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Arequipa</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Ayacucho</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Cajamarca</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Cuzco</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Huancavelica</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Huánuco</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Ica</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Junín</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">La Libertad</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Lambayeque</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Lima</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Loreto</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Madre de Dios</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Moquegua</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Pasco</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Piura</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Puno</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">San Martín</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Tacna</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Tumbes</li>
+              <li><input type="checkbox" id="Amazonas" name="" value="">Ucayali</li>
+          </label><br>
+          <span>Indicar las provincias en las que intervienen tu emprendimiento respecto a las regiones marcadas anteriormente.</span>
+          <label>Provincia <br>
+            <input type="text" id="provincia" name="" value=""> <br>
+            <span>Indicar los distritos en las que intervienen tu emprendimiento respecto a las provincias marcadas anteriormente</span>
+          </label>
+
+        </div>
+      </section>
+      <section class="informacion-entidad">
+        <h2>Información estratégica de la entidad postulante</h2>
+      </section>
+      <section class="futuro-entidad">
+        <h2>Sobre el futuro de la organización postulante</h2>
+      </section>
+      <section class="informacion-complementaria">
+        <h2>Información complementaria</h2>
+      </section>
+      <section class="declaracion-jurada">
+        <h2>Declaración Jurada</h2>
+      </section>
+      <section class="enviar">
+        <h2>Enviar la postulación para su revisión</h2>
+      </section>
+    </section>
+    <footer>
+      <div class="menu">
+        Kunan
+        <ul>
+          <li><a href="#">Premio</a></li>
+          <li><a href="#">Comunidad</a></li>
+          <li><a href="#">Komunicación</a></li>
+        </ul>
+        <div class="redes-sociales">
+          <h3>Síguenos</h3>
+          <a><img src="assets/img/Facebook.png" alt=""></a>
+          <a><img src="assets/img/Instagram.png" alt=""></a>
+          <a><img src="assets/img/twitter.png" alt=""></a>
+          <a><img src="assets/img/youtube.png" alt=""></a>
+
+        </div>
+
+      </div>
+    </footer>
+
+
     <script src="assets/js/main.js" charset="utf-8"></script>
   </body>
 </html>
