@@ -1,9 +1,13 @@
 body{
   font-family: 'Raleway', sans-serif;
 }
+
 .izquierda, .derecha{
   float: left;
   width: 50%;
+}
+label{
+  display: block;
 }
 
 footer{
